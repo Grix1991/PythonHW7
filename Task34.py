@@ -11,3 +11,9 @@
 
 # Вывод:
 # Парам пам-пам
+n = input("Введите слова: ").split()
+list1 = [sum(i in 'аеёиоуыэюя' for i in list2) for list2 in n]
+if len(set(list1)) == 1:
+    print("Парам пам-пам")
+else:
+    print("Пам парам")
